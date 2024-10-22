@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نموذج اختيار</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="d-flex justify-content-center">
+            <h2>El Mostakbal Modern School</h2>
+        </div>
+        <div class="d-flex justify-content-center">ّ
+            <h2>Weekly Plan</h2>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="monthInput">monthّّ:</label>
+                <input type="month" class="form-control" id="monthInput">
+            </div>
+        </div>
+        <div class="form-group" id="weekSelectorDiv" style="display:none;">
+            <label for="weekSelector">ٍٍSelect Week</label>
+            <select class="form-control" id="weekSelector">
+                <optgroup label="Select Week">
+                    <option value="" disabled selected>Select Grade</option>
+                    <option value="first">First Week</option>
+                    <option value="second">Second Week</option>
+                    <option value="third">Third Week</option>
+                    <option value="fourth">Fourth Week</option>
+                    <option value="fifth">Fifth Week</option>
+                </optgroup>
+            </select>
+        </div>
+        <div class="form-group" id="gradeSelectorDiv" style="display:none;">
+            <label for="gradeSelector">Select grade:</label>
+            <select class="form-control" id="gradeSelector">
+                <option value="" disabled selected>Select Grade</option>
+                <optgroup label="KG-1">
+                    <option value="Moana">Moana</option>
+                    <option value="Trolls">Trolls</option>
+                    <option value=" Brave"> Brave</option>
+                </optgroup>
+                <optgroup label="KG-2">
+                    <option value="Peter pan">Peter pan</option>
+                    <option value="Snowwhite">Snowwhite</option>
+                    <option value="Mowgli"> Mowgli</option>
+                    <option value="Crackers"> Crackers</option>
+                </optgroup>
+                <optgroup label="Primary">
+                    <option value="1a">1a</option>
+                    <option value="1b">1b</option>
+                    <option value="1c">1c</option>
+                    <option value="2a">2a</option>
+                    <option value="2b">2b</option>
+                    <option value="2c">2c</option>
+                    <option value="3a">3a</option>
+                    <option value="3b">3b</option>
+                    <option value="3c">3c</option>
+                    <option value="4a">4a</option>
+                    <option value="4b">4b</option>
+                    <option value="4c">4c</option>
+                    <option value="4d">4d</option>
+                    <option value="5a">5a</option>
+                    <option value="5b">5b</option>
+                    <option value="5c">5c</option>
+                    <option value="6a">6a</option>
+                    <option value="6b">6b</option>
+                </optgroup>
+                <optgroup label="PREP">
+                    <option value="prep1a">1a</option>
+                    <option value="prep1b">1b</option>
+                    <option value="prep2a">2a</option>
+                    <option value="prep2b">2b</option>
+                    <option value="p3">p3</option>
+                </optgroup>
+                <optgroup label="High">
+                    <option value="sec1">sec1</option>
+                    <option value="sec2">sec2</option>
+                    <option value="sec3">sec3</option>
+                </optgroup>
+            </select>
+        </div>
+        <div id="tableDiv" style="display:none;">
+            <h3>Table:</h3>
+            <table class="table table-bordered table-responsive" id="data-table">
+                <thead>
+                    <tr>
+                        <th>subject</th>
+                        <th>sunday</th>
+                        <th>monday</th>
+                        <th>tuesday</th>
+                        <th>Wednesday</th>
+                        <th>thursday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- سيتم ملء الصفوف هنا من خلال JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
